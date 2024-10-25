@@ -6,7 +6,7 @@ services:
     build:
       context: . 
       dockerfile: Dockerfile
-    command: sh -c "npm i && npm run dev"
+    command: sh -c "bun i && bun run dev"
     restart: always 
     ports:
       - "3000:3000" 
